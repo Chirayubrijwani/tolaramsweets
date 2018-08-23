@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+<title>Cookery A Food Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<link href={% static "home/css/bootstrap.css" %} rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src={% static "home/js/jquery.min.js" %}></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href={% static "home/css/style.css" %} rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Cookery Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!---->
+<link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src={% static "home/js/move-top.js" %}></script>
+		<script type="text/javascript" src={% static "home/js/easing.js" %}></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+<link href={% static "home/css/styles.css" %} rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href={% static "home/css/component.css" %} />
+	<!-- animation-effect -->
+<link href={% static "home/css/animate.min.css" %} rel="stylesheet"> 
+<script src={% static "home/js/wow.min.js" %}></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+<style type="text/css">
+	
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+</style>
+</head>
+<body>
+ <div class="header">
+	<div class="container">
+		<div class="logo animated wow pulse" data-wow-duration="1000ms" data-wow-delay="500ms">
+			<h1><a href="index.html"><span></span><img src={% static "home/images/ts.jpg" %} alt=""><img src={% static "home/ts/.jpg" %} alt="">TOLARAM SWEETS</a></h1>
+		</div>
+		<div class="nav-icon">		
+			<a href="#" class="navicon"></a>
+				<div class="toggle">
+					<ul class="toggle-menu">
+						<li><a class="active" href="index.html">Home</a></li>
+						<li><a  href="/tolaram/menu">Menu</a></li>
+						<li><a  href="/tolaram/blog">Blog</a></li>
+						<li><a  href="/tolaram/typo">Codes</a></li>
+						<li><a  href="/tolaram/events">Events</a></li>
+						<li><a  href="/tolaram/contact">Contact</a></li>
+					</ul>
+				</div>
+			<script>
+			$('.navicon').on('click', function (e) {
+			  e.preventDefault();
+			  $(this).toggleClass('navicon--active');
+			  $('.toggle').toggleClass('toggle--active');
+			});
+
+			</script>
+		</div>
+	<div class="clearfix"></div>
+	</div>
+	<!-- start search-->	
+		<div class="banner">
+			<p class="animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">Sed ut perspiciatis unde omnis iste natus.</p>
+			<label></label>
+			<h4 class="animated wow fadeInTop" data-wow-duration="1000ms" data-wow-delay="500ms">Hello And Welcome To TOLARAM SWEETS</h4>
+			<a class="scroll down" href="#content-down"><img src={% static "home/images/.jpg" %} alt=""></a>
+		</div>
+</div>
+<!--content-->
+<div class="content" id="content-down">
+	<div class="content-top-top">
+		<div class="container">
+			<div class="content-top">
+				<div class="col-md-4 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<h3>About</h3>
+					<label><i class="glyphicon glyphicon-menu-up"></i></label>
+					<span>There are many Category of Sweets</span>
+				</div>
+				<div class="col-md-8 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<p>TOLARAM SWEETS has a large collection of sweets, with each region specializing in their own unique variety. Sweets occupy an important place in the diet of Bengali and Odia people. Even at their social ceremonies sweets play an important role. It is an ancient custom to distribute sweets during festivities. The confectionery industry has flourished because of its close association with social and religious ceremonies. Competition and changing tastes have helped to create many new sweets, and today this industry has grown within the country as well as all over the world.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+				
+	<section class="container p-t-3">
+	    <div class="row">
+	        <div class="col-lg-12">
+	            <h1>BEST SELLER</h1>
+	        </div>
+	    </div>
+	</section>
+	<section class="carousel slide" data-ride="carousel" id="postsCarousel" style="margin-bottom: 40px;">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12 text-md-right lead">
+	                <a class="btn btn-outline-secondary prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+	                <a class="btn btn-outline-secondary next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="container p-t-0 m-t-2 carousel-inner">
+	    	{% for best in bests %}
+	    	{% if forloop.counter0|divisibleby:3  %}
+	        	<div class="row row-equal carousel-item active m-t-0">
+	        {% endif %}
+	            <div class="col-md-4">
+	                <div class="card">
+	                    <div class="card-img-top card-img-top-250">
+	                        <img class="img-fluid" src={{ best.img.url }} alt="Carousel 1">
+	                    </div>
+	                    <div class="card-block p-t-2">
+	                        <h3 class=" text-wide p-b-2">{{ best.name }}</h3>
+	                        <h2>
+	                            <a href>{{ best.desc }}</a>
+	                        </h2>
+	                    </div>
+	                </div>
+	            </div>
+	            {% if forloop.counter0|divisibleby:3  %}
+	        	</div>
+	        {% endif %}
+	        
+	            {% endfor %}
+<!-- 	            <div class="col-md-4">
+	                <div class="card">
+	                    <div class="card-img-top card-img-top-250">
+	                        <img class="img-fluid" src="http://i.imgur.com/Hw7sWGU.png" alt="Carousel 2">
+	                    </div>
+	                    <div class="card-block p-t-2">
+	                        <h6 class="small text-wide p-b-2">Development</h6>
+	                        <h2>
+	                            <a href>How to Make Every Line Count.</a>
+	                        </h2>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="card">
+	                    <div class="card-img-top card-img-top-250">
+	                        <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 3">
+	                    </div>
+	                    <div class="card-block p-t-2">
+	                        <h6 class="small text-wide p-b-2">Design</h6>
+	                        <h2>
+	                            <a href>Responsive is Essential.</a>
+	                        </h2>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row row-equal carousel-item m-t-0">
+	            <div class="col-md-4">
+	                <div class="card">
+	                    <div class="card-img-top card-img-top-250">
+	                        <img class="img-fluid" src="//visualhunt.com/photos/l/1/office-student-work-study.jpg" alt="Carousel 4">
+	                    </div>
+	                    <div class="card-block p-t-2">
+	                        <h6 class="small text-wide p-b-2">Another</h6>
+	                        <h2>
+	                            <a href>Tagline or Call-to-action.</a>
+	                        </h2>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="card">
+	                    <div class="card-img-top card-img-top-250">
+	                        <img class="img-fluid" src="//visualhunt.com/photos/l/1/working-woman-technology-computer.jpg" alt="Carousel 5">
+	                    </div>
+	                    <div class="card-block p-t-2">
+	                        <h6 class="small text-wide p-b-2"><span class="pull-xs-right">12.04</span> Category 1</h6>
+	                        <h2>
+	                            <a href>This is a Blog Title.</a>
+	                        </h2>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4 fadeIn wow">
+	                <div class="card">
+	                    <div class="card-img-top card-img-top-250">
+	                        <img class="img-fluid" src="//visualhunt.com/photos/l/1/people-office-team-collaboration.jpg" alt="Carousel 6">
+	                    </div>
+	                    <div class="card-block p-t-2">
+	                        <h6 class="small text-wide p-b-2">Category 3</h6>
+	                        <h2>
+	                            <a href>Catchy Title of a Blog Post.</a>
+	                        </h2>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>-->
+	    </div>
+	</section>
+ 
+
+<!--services-->
+<div class="services">
+	<div class="container">
+		<div class="services-top">		
+			<div class="col-md-8 services-right animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<p>The traditional sweets or confectioneries, which are called मिठाई (Mithai), are important part of Indian cuisine. For different occasions, we have different Mithai. If you would start counting all varieties, be sure to run into hundreds. Given the size and diversity in India, this can be expected. These sweets are usually purchased but in many traditional occasional are prepared at home with the traditional methods or using readymade mix packs which are available from the market. Outside India, these delicacies are available at Indian restaurant or Indian shops in packed tin-cans which can be warmed on stoves or in microwaves.</p>
+			</div>
+			<div class="col-md-4 services-left animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+				<h3>Services</h3>
+				<label><i class="glyphicon glyphicon-menu-up"></i></label>
+				<span>There are many variations</span>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="service-top">
+			<div class="col-md-5 service-top animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+				<div class=" service-grid">
+					<div class="col-md-6 service-grid1">
+						<div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+							<a href="#" class="hi-icon hi-icon-mobile glyphicon glyphicon-leaf"></a>
+						</div>
+					</div>
+					<div class="col-md-6 service-grid1">
+						<div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+							<a href="#" class="hi-icon hi-icon-mobile glyphicon glyphicon-star-empty"></a>
+						</div>					
+						</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class=" service-grid">
+					<div class="col-md-6 service-grid1">
+						<div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+							<a href="#" class="hi-icon hi-icon-mobile glyphicon glyphicon-folder-open"></a>
+						</div>					
+						</div>
+					<div class="col-md-6 service-grid1">
+						<div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+							<a href="#" class="hi-icon hi-icon-mobile glyphicon glyphicon-home"></a>
+						</div>					
+						</div>
+					<div class="clearfix"> </div>
+				</div>
+				
+			</div>
+			<div class="col-md-7 service-bottom animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+				<div class=" service-bottom1">
+					<div class=" ser-bottom">
+						<img src={% static "home/images/4.jpg" %} class="img-responsive" alt="">
+					</div>
+					<div class="ser-top "> 
+						<h5>PROVIDES ONE OF THE BEST TASTE &amp; QUALITY IN TOWN </h5>
+						<p>India has a large collection of sweets, with each region specializing in their own unique variety. Sweets occupy an important place in every person life.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class=" service-bottom1">
+					<div class=" ser-bottom">
+						<img src={% static "home/images/5.jpg" %} class="img-responsive" alt="">
+					</div>
+					<div class="ser-top "> 
+						<h5>GIVES THE MOUTHWATERING TASTE OF INDIAN TARDITIONAL SWEETS </h5>
+						<p> Competition and changing tastes have helped to create many new sweets, and today this industry has grown within the country as well as all over the world.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class=" service-bottom1">
+					<div class=" ser-bottom">
+						<img src={% static "home/images/6.jpg" %} class="img-responsive" alt="">
+					</div>
+					<div class="ser-top "> 
+						<h5>AISA SWAD JO HAMESHA RHA YAD</h5>
+						<p>PROVIDES WITH THE ONE OF THE UNIQUE STYLE OF INDIAN TRADITIONAL SWEETS.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--//services-->
+<!--news-->
+	<div class="content-top-top">
+		<div class="container">
+			<div class="content-top">
+				<div class="col-md-4 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<h3>OUR STORY</h3>
+					<label><i class="glyphicon glyphicon-menu-up"></i></label>
+					<span>SINCE 1960'S</span>
+				</div>
+				<div class="col-md-8 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<p>TOLARAM SWEETS  has its roots established in 1960 in the form of a small thela of Sweets in Delhi.
+
+Shri TOLARAM JI BRIJWANI, the founder of TOALRAM SWEETS always cherished the dream of building an sweets, manufacture traditional sweets/namkeens, leave a mark on every occasion and get close to the heart of the common man. This dream was realized with shifting to Gwalior Madhya Pradesh.
+
+For the first time people heard of a Shop that was operating to manufacture Sweets & Namkeens. A model plant of its times was set up Starting with only two members.Now After almost 50 years the TOLARAM SWEETS is growing because of two people MR .HARISH BRIJWANI and MR.ASHOK BRIJWANI the person after there father has taken Tolaram Sweets to one of the greatest Peak.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="news-bottom">
+				<div class="news-bot">
+					<div class="col-md-6 news-bottom1 animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+						<a href="single.html">
+							<div class="content-item">
+								<div class="overlay"></div>
+								<div class=" news-bottom2">
+									<ul class="grid-news">
+										<li><span><i class="glyphicon glyphicon-calendar"> </i>08.09.2014</span><b>/</b></li>
+										<li><span><i class="glyphicon glyphicon-comment"> </i>5 Comment</span><b>/</b></li>
+										<li><span><i class="glyphicon glyphicon-share"> </i>Share</span></li>
+									</ul>
+									<p>There are many variations of passages of Lorem Ipsum available</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 news-bottom1 animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+						<a href="single.html">
+							<div class="content-item content-item1">
+								<div class="overlay"></div>
+								<div class=" news-bottom2">
+									<ul class="grid-news">
+											<li><span><i class="glyphicon glyphicon-calendar"> </i>08.09.2014</span><b>/</b></li>
+											<li><span><i class="glyphicon glyphicon-comment"> </i>5 Comment</span><b>/</b></li>
+											<li><span><i class="glyphicon glyphicon-share"> </i>Share</span></li>
+										</ul>
+									<p>There are many variations of passages of Lorem Ipsum available</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="news-bot">
+					<div class="col-md-6 news-bottom1">
+						<a href="single.html">
+							<div class="content-item content-item2 animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+								<div class="overlay"></div>
+								<div class=" news-bottom2">
+									<ul class="grid-news">
+											<li><span><i class="glyphicon glyphicon-calendar"> </i>08.09.2014</span><b>/</b></li>
+											<li><span><i class="glyphicon glyphicon-comment"> </i>5 Comment</span><b>/</b></li>
+											<li><span><i class="glyphicon glyphicon-share"> </i>Share</span></li>
+										</ul>
+									<p>There are many variations of passages of Lorem Ipsum available</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 news-bottom1 animated wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+						<a href="single.html">
+							<div class="content-item content-item3">
+								<div class="overlay"></div>
+								<div class=" news-bottom2">
+									<ul class="grid-news">
+											<li><span><i class="glyphicon glyphicon-calendar"> </i>08.09.2014</span><b>/</b></li>
+											<li><span><i class="glyphicon glyphicon-comment"> </i>5 Comment</span><b>/</b></li>
+											<li><span><i class="glyphicon glyphicon-share"> </i>Share</span></li>
+										</ul>
+									<p>There are many variations of passages of Lorem Ipsum available</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+<!--//news-->
+</div>
+<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-head">
+				<div class="col-md-8 footer-top animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<ul class=" in">
+						<li><a href="index.html">Home</a></li>
+						<li><a  href="menu.html">Menu</a></li>
+						<li><a  href="blog.html">Blog</a></li>
+						<li><a  href="events.html">Events</a></li>
+						<li><a  href="contact.html">Contact</a></li>
+					</ul>					
+						<span>There are many variations of passages</span>
+				</div>
+				<div class="col-md-4 footer-bottom  animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<h2>Follow Us</h2>
+					<label><i class="glyphicon glyphicon-menu-up"></i></label>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+					<ul class="social-ic">
+						<li><a href="#"><i></i></a></li>
+						<li><a href="#"><i class="ic"></i></a></li>
+						<li><a href="#"><i class="ic1"></i></a></li>
+						<li><a href="#"><i class="ic2"></i></a></li>
+						<li><a href="#"><i class="ic3"></i></a></li>
+					</ul>
+
+				</div>
+			<div class="clearfix"> </div>
+					
+			</div>
+			<p class="footer-class animated wow bounce" data-wow-duration="1000ms" data-wow-delay="500ms">&copy; 2018 TOLARAM SWEETS . All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+		</div>
+	</div>		
+	<!--//footer-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+	<script type="text/javascript">
+		(function($) {
+    "use strict";
+
+    // manual carousel controls
+    $('.next').click(function(){ $('.carousel').carousel('next');return false; });
+    $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+    
+})(jQuery);
+	</script>
+</body>
+</html>
