@@ -25,7 +25,7 @@ SECRET_KEY = '1nj70sdz@wuw#x6)$l3(t_y(x_u$-_n8a=1q8970%%j1!*e5ry'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -117,9 +117,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
