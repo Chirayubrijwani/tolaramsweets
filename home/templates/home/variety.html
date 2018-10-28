@@ -32,7 +32,132 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  new WOW().init();
 </script>
 <!-- //animation-effect -->
+<style type="text/css">
+	.icon-cart {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
 
+.icon-cart .cart-line-1 {
+  width: 15%;
+  height: 7%;
+  position: absolute;
+  left: 8%;
+  top: 25%;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg); 
+  background-color: #000;
+  border-bottom-left-radius: 35%;
+}
+
+.icon-cart .cart-line-2 {
+  width: 35%;
+  height: 7%;
+  position: absolute;
+  left: 6%;
+  top: 40%;
+  -webkit-transform: rotate(80deg);
+  -moz-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg); 
+  background-color: #000;
+}
+
+.icon-cart .cart-line-2:before {
+  content: "";
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  left: 45%;
+  top: -280%;
+  -webkit-transform: rotate(-80deg);
+  -moz-transform: rotate(-80deg);
+  -ms-transform: rotate(-80deg);
+  transform: rotate(-80deg); 
+  background-color: inherit;
+}
+
+.icon-cart .cart-line-2:after {
+  content: "";
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  left: 59%;
+  top: -670%;
+  background-color: inherit;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg); 
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 25%;
+}
+
+.icon-cart .cart-line-3 {
+  width: 30%;
+  height: 7%;
+  position: absolute;
+  left: 33%;
+  top: 45%;
+  background-color: #000;
+}
+
+.icon-cart .cart-line-3:after {
+  content: "";
+  width: 124%;
+  height: 100%;
+  position: absolute;
+  top: -150%;
+  left: -5%;
+  background-color: inherit;
+}
+
+.icon-cart .cart-wheel {
+  width: 12%;
+  height: 12%;
+  background-color: #000;
+  border-radius: 100%;
+  position: absolute;
+  left: 28%;
+  bottom: 20%;
+}
+
+.icon-cart .cart-wheel:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 100%;
+  position: absolute;
+  left: 200%;
+  bottom: 0;
+}
+.badge1 {
+   position:relative;
+}
+.badge1[data-badge]:after {
+   content:attr(data-badge);
+   position:absolute;
+   top:-15px;
+   right:-10px;
+   font-size:1em;
+   font-weight: 200;
+   background:white;
+   color:black;
+   width:18px;height:18px;
+   text-align:center;
+   line-height:18px;
+   border-radius:50%;
+   box-shadow:0 0 1px #333;
+   font-weight: bolder;
+}
+</style>
 </head>
 <body>
 <div class="header head">
@@ -44,12 +169,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<a href="#" class="navicon"></a>
 				<div class="toggle">
 					<ul class="toggle-menu">
-						<li><a  href="{% url 'home:index' %}">Home</a></li>
-						<li><a class="active" href="/tolaram/menu">Menu</a></li>
-						<li><a  href="/tolaram/blog">Blog</a></li>
-						
-						<li><a  href="/tolaram/events">Events</a></li>
-						<li><a  href="/tolaram/contact">Contact</a></li>
+						<li><a  href="{% url 'home:index' %}">HOME</a></li>
+						<li><a class="active" href="/tolaram/menu">MENU</a></li>
+						<li><a  href="/tolaram/blog">BOOK ORDERS</a></li>
+						<li><a  href="/tolaram/typo">FESTIVE OFFERS</a></li>
+						<li><a  href="/tolaram/events">FEEDBACK</a></li>
+						<li><a  href="/tolaram/contact">ABOUT US</a></li>
 					</ul>
 				</div>
 			<script>
@@ -60,6 +185,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 			</script>
 		</div>
+		
+		<div class="icon-cart" style="float: right;margin-right:15px; ">
+    		<div class="cart-line-1" style="background-color: #E5E9EA"><a style="margin-left: 30px;" class="badge1" id="cart" data-badge=></a></div>
+    		<div class="cart-line-2" style="background-color: #E5E9EA"></div>
+    		<div class="cart-line-3" style="background-color: #E5E9EA"></div>
+    		<div class="cart-wheel" style="background-color: #E5E9EA"></div>
+  			</div>
 	<div class="clearfix"></div>
 	</div>
 	<!-- start search-->	
@@ -76,18 +208,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="clearfix"> </div>
 			</div>
+			<script type="text/javascript">
+				$(window).on('load', function() {
+					k=document.getElementById("cart");
+					k.dataset.badge=window.localStorage.length;					
+				});
+				function func(id){
+					window.localStorage.setItem(id.id,1);
+					k=document.getElementById("cart");
+					k.dataset.badge=window.localStorage.length;
+				}
+			</script>
 			<div class="menu-bottom animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
 				{% if products %}
 				{% for product in products %}
 				<div class="col-md-4 menu-bottom1" style="margin-bottom: 30px;">
 					<div class="btm-right">
-						<a href={{ category.pk }}>
+						<div href={{ category.pk }}>
 							<img src={{ product.img.url }} alt="" class="img-responsive" style="width:400px;height:300px; : ">
 							<div class="captn">
 								<h4>{{ product.name }}</h4>
-								<p>{{ product.cost }}</p>				
+								<p>{{ product.cost }}</p>
+							<button id={{ product.pk }} style="border-radius:10px;color: black; font-size: 15px;" onclick="func(this)" type="button">Add to Cart</button>
+
 							</div>
-						</a>						
+						</div>												
 					</div>
 				</div>
 				{% endfor %}
